@@ -1,0 +1,7 @@
+arguments: src\align\align_dataset_mtcnn.py datasets\lfw\raw datasets\lfw\lfw_mtcnnpy_160 --image_size 160 --margin 32 --random_order --gpu_memory_fraction 0.25
+--------------------
+tensorflow version: 1.7.0
+--------------------
+git hash: b'096ed770f163957c1e56efa7feeb194773920f6e'
+--------------------
+b'diff --git a/requirements.txt b/requirements.txt\nindex b7418c9..668f6bd 100644\n--- a/requirements.txt\n+++ b/requirements.txt\n@@ -1,9 +1,16 @@\n tensorflow==1.7\n-scipy\n-scikit-learn\n-opencv-python\n-h5py\n-matplotlib\n-Pillow\n-requests\n+scipy~=1.5.2\n+scikit-learn~=0.24.2\n+opencv-python~=4.5.2.54\n+h5py~=2.10.0\n+matplotlib~=3.3.4\n+Pillow~=8.2.0\n+requests~=2.25.1\n psutil\n+\n+\n+tensorflow==1.7 scipy scikit-learn opencv h5py matplotlib Pillow requests psutil\n+\n+\n+numpy~=1.19.1\n+six~=1.16.0\n\\ No newline at end of file'
