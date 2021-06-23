@@ -4,6 +4,7 @@ scikit-learn~=0.24.2
 opencv-python~=4.5.2.54
 h5py~=2.10.0
 matplotlib~=3.3.4
+numpy~=1.19.1
 Pillow~=8.2.0
 requests~=2.25.1
 psutil

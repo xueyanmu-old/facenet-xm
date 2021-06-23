@@ -49,10 +49,18 @@ def main(args):
             
             # Read the file containing the pairs used for testing
             pairs = lfw.read_pairs(os.path.expanduser(args.lfw_pairs))
-
+            print("args.lfw_pairs")
+            print(args.lfw_pairs)
             # Get the paths for the corresponding images
+            print("pairs")
+            print(pairs)
+
             paths, actual_issame = lfw.get_paths(os.path.expanduser(args.lfw_dir), pairs)
-            
+            # print("paths")
+            # print(paths)
+            # print("actual_issame")
+            # print(actual_issame)
+
             image_paths_placeholder = tf.placeholder(tf.string, shape=(None,1), name='image_paths')
             labels_placeholder = tf.placeholder(tf.int32, shape=(None,1), name='labels')
             batch_size_placeholder = tf.placeholder(tf.int32, name='batch_size')
